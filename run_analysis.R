@@ -68,7 +68,7 @@ run_analysis <- function() {
                          label = test_labels$V1)
   test_set <- cbind(test_set, test_mean_std)
   
-  #Merge the training and the test sets to create one data set]
+  #Merge the training and the test sets to create one data set
   setkey(x = training_set)
   setkey(x = test_set)
   merged <- merge(x = training_set, y = test_set, all = TRUE)
@@ -90,9 +90,8 @@ run_analysis <- function() {
   #Calculate average of each variable for each activity and each subject
   averages <- summarise(.data = grouped, mean(value))
   
-  #Write averages to a .csv file
+  #Write averages to a .txt file
   setwd("../")
-  averages_df <- as.data.frame(averages)
-  write.csv(x = averages_df, file = "averages.csv")
+  write.table(x = averages, file = "averages.txt", row.names = FALSE)
   
 }

@@ -1,6 +1,6 @@
 Code book for my Getting and Cleaning Data Course Project
 
-The variables in “averages.csv” are as follows:
+The variables in “averages.txt” are as follows:
 
 - set, i.e. training or test
 - subject (1-30)
