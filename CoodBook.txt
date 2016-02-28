@@ -4,6 +4,7 @@ The variables in “averages.txt” are as follows:
 
 - set, i.e. training or test
 - subject (1-30)
+- activity label - WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING
 - measurement, which is described in more detail below
 - mean(value) - the average of each variable for each activity and each subject
 
